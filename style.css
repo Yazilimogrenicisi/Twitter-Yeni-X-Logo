@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #17181c;
+}
+
+.twitter {
+  position: relative;
+  width: 25px;
+  height: 300px;
+  background-color: white;
+  transform: skew(-40deg);
+}
+
+.twitter::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -1.5rem;
+  width: 40px;
+  height: calc(300px - 40px);
+  background-color: #17181c;
+  transform: skew(58deg);
+  border: solid white;
+  border-block-width: 20px;
+  border-inline-width: 1.5rem;
+}
